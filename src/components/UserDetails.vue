@@ -1,19 +1,28 @@
 <template>
   <div class="details-container">
     <h3>John Smith</h3>
-    <div id='user-title'>IT Project Manager</div>
-    <div class='user-details'>
-      <div id='user-phone'><b>Phone</b> 774-987-4009</div>
-      <div id='user-linkedin'><b>Linkedln</b> Iinkedin.comljohnutw</div>
+    <div class='qr-code-container'>
+      <div>
+        <div id='user-title'>
+          IT Project Manager
+        </div>
+        <div class='user-details'>
+          <div id='user-phone'><b>Phone</b> 774-987-4009</div>
+          <div id='user-linkedin'><b>Linkedln</b> Iinkedin.comljohnutw</div>
+        </div>
+        <div id='user-email'><b>E-mail</b> j.smith@uptowork.com</div>
+      </div>
+      <div class='qr-img-container'>
+        <img class='qr-img' src='https://raw.githubusercontent.com/roshanravi2512/resume-template/master/resume-qr.png' alt='Resume QR'>
+      </div>
     </div>
-    <div id='user-email'><b>E-mail</b> j.smith@uptowork.com</div>
-
     
     <div><p class='description'>IT Professional with over 10 years of experience specializing in IT department 
       management for international logistics companies. I can implement effective IT strategies 
       at local and global levels. My greatest strength is business awareness, which enables me to 
       permanently streamline infrastructure and applications. Looking to leverage my IT Management 
-      skills at SanCorp Inc.</p></div>
+      skills at SanCorp Inc.</p>
+    </div>
 
   </div>
 </template>
@@ -50,6 +59,19 @@ export default {
 
 #user-email {
   font-size: small;
+}
+
+.qr-code-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.qr-img-container {
+  margin-top: -40px;
+}
+
+.qr-img {
+  height: 100px;
 }
 
 </style>
